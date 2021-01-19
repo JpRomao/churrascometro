@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Churrascômetro</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <div id="app">
+      <header class="header">
+        <h1 class="title">Churrascômetro</h1>
+      </header>
+      <section id="informations">
+        <main>
+          <form>
+            <div class="input-block">
+              <label for="adults">Adultos:</label>
+              <input type="number" name="adults" id="adults" placeholder="Quantidade de adultos..." required/>
+            </div>
+            <div class="input-block">
+              <label for="beer">Quantos bebem:</label>
+              <input type="number" name="beer" id="beer" placeholder="Quantidade de adultos que bebem..." required/>
+            </div>
+            <div class="input-block">
+              <label for="childs">Crianças:</label>
+              <input type="number" name="childs" id="childs" placeholder="Quantidade de crianças..." required/>
+            </div>
+            <div class="input-block">
+              <label for="duration">Duração(em horas):</label>
+              <input type="number" name="duration" id="duration" placeholder="Duração do churrasco..." required/>
+            </div>
+            <button type="button" class="btn" onclick="calculate()">Calcular</button>
+          </form>
+          <article id="results"></article>
+        </main>
+      </section>
+      <!-- <footer>
+        <section id="quantity-informations">
+          <article id="meat-quantity">
+            <h4>Quantidade de carne</h4>
+            <p><input class="quantity-input" type="number"/> por adulto</p>
+            <p><input class="quantity-input" type="number"/> por criança</p>
+          </article>
+          <article id="beer-quantity">
+            <h4>Quantidade de cerveja</h4>
+            <p><input class="quantity-input" type="number"/> de cerveja por pessoa</p>
+          </article>
+        </section>
+      </footer> -->
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

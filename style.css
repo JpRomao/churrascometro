@@ -1,0 +1,133 @@
+:root {
+  font-size: 60%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  font: 500 2rem Roboto;
+}
+
+.container {
+  width: 90vw;
+  margin: 4rem auto 0 auto;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  border-radius: 2.2rem;
+  padding: 2rem;
+  width: 96%;
+  margin: auto;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.header .title {
+  font-size: 3.2rem;
+}
+
+#informations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  width: 100%;
+}
+
+.input-block {
+  margin-bottom: 1.2rem;
+}
+
+input {
+  text-align: center;
+  padding: 0.6rem;
+  margin-left: 0.2rem;
+  border-radius: 1.4rem;
+  height: 3.2rem;
+  background-color: gold;
+  width: 30%;
+  font-size: 1.5rem;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: gold;
+  font: 400 2rem Archivo;
+  font-weight: bold;
+}
+
+#quantity-informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.3rem;
+}
+
+footer h4 {
+  margin-bottom: 0.8rem;
+}
+
+footer article {
+  text-align: center;
+}
+
+#meat-quantity .quantity-input {
+  margin-bottom: 0.8rem;
+}
+
+#beer-quantity {
+  margin-top: 2.8rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+ul {
+  margin-left: 1.6rem;
+}
+
+li  {
+  margin-top: 1.6rem;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 63%;
+  }
+
+  input {
+    width: 50%;
+  }
+}
